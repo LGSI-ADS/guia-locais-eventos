@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 120" width="300" height="120" role="img" aria-label="Ilustração do Parque Centenário">
+  <rect width="300" height="120" fill="#e2f0e2"/>
+  <rect x="60" y="86" width="14" height="20" fill="#6b4a2f"/>
+  <rect x="141" y="80" width="16" height="26" fill="#6b4a2f"/>
+  <rect x="219" y="88" width="13" height="18" fill="#6b4a2f"/>
+  <circle cx="67" cy="70" r="21" fill="#3f8a4d"/>
+  <circle cx="149" cy="62" r="27" fill="#265f38"/>
+  <circle cx="225" cy="73" r="18" fill="#4f9c58"/>
+  <path d="M0 98 C 60 88, 120 108, 180 98 C 230 90, 270 102, 300 96 L300 120 L0 120 Z" fill="#8ecae6"/>
+  <text x="150" y="116" text-anchor="middle" font-family="Segoe UI, Verdana, sans-serif" font-size="12" fill="#1f2933">Parque Centenário</text>
+</svg>
