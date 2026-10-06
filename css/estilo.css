@@ -1,0 +1,305 @@
+/* ==========================================================================
+   Guia de Locais e Eventos — página de detalhe
+   Paleta: azul #1c6cab (títulos) | #2f8fd8 (links/tabela)
+           texto quente #5b4a3c | fundo #f5f7fa | cartão #ffffff
+   ========================================================================== */
+
+/* ---------- Base ---------- */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 32px 16px 40px;
+  background-color: #f5f7fa;
+  font-family: "Segoe UI", Candara, "Trebuchet MS", Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #5b4a3c;
+}
+
+/* Link de atalho: só aparece quando recebe foco pelo teclado */
+.pular-para-conteudo {
+  position: absolute;
+  top: -60px;
+  left: 16px;
+  z-index: 10;
+  padding: 10px 16px;
+  border-radius: 6px;
+  background-color: #1c6cab;
+  color: #ffffff;
+}
+
+.pular-para-conteudo:focus {
+  top: 12px;
+}
+
+/* ---------- Cabeçalho e menu ---------- */
+
+.cabecalho {
+  max-width: 760px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.cabecalho h1 {
+  margin: 0 0 6px;
+  font-size: 2.25rem;
+  line-height: 1.2;
+  color: #1f2933;
+}
+
+.subtitulo {
+  margin: 0 0 20px;
+  font-size: 1.05rem;
+  color: #4a5560;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 4px 16px;
+}
+
+.menu a {
+  display: inline-block;
+  padding: 4px 2px;
+  font-size: 1rem;
+}
+
+/* ---------- Estados dos links (ordem LVHA) ---------- */
+
+a:link {
+  color: #2f8fd8;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #6b62c4;
+}
+
+a:hover {
+  color: #14588f;
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: 3px solid #e08b1e;
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+a:active {
+  color: #0f4671;
+}
+
+/* ---------- Cartões de seção ---------- */
+
+.cartao {
+  max-width: 760px;
+  margin: 0 auto 26px;
+  padding: 26px 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.09);
+}
+
+.cartao h2 {
+  margin: 0 0 14px;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  color: #1c6cab;
+}
+
+.cartao p {
+  margin: 0 0 12px;
+  max-width: 65ch;
+}
+
+.cartao strong {
+  color: #2c3540;
+}
+
+/* ---------- Citação ---------- */
+
+blockquote {
+  margin: 18px 0 0;
+  padding: 2px 0 2px 16px;
+  border-left: 4px solid #2f8fd8;
+  font-style: italic;
+  color: #7a7a7a;
+}
+
+blockquote p {
+  margin: 0;
+}
+
+blockquote p::before {
+  content: "\201C";
+}
+
+blockquote p::after {
+  content: "\201D";
+}
+
+/* ---------- Tabela de informações ---------- */
+
+.tabela-informacoes {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.98rem;
+}
+
+.tabela-informacoes caption {
+  caption-side: top;
+  padding-bottom: 10px;
+  text-align: left;
+  font-size: 0.92rem;
+  color: #8a7350;
+}
+
+.tabela-informacoes thead th {
+  padding: 12px 14px;
+  background-color: #3d9ad9;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.tabela-informacoes tbody th,
+.tabela-informacoes tbody td {
+  padding: 11px 14px;
+  text-align: left;
+  font-weight: normal;
+  color: #3a4149;
+}
+
+/* Zebra: linhas pares do corpo da tabela */
+.tabela-informacoes tbody tr:nth-child(even) {
+  background-color: #f1f2f4;
+}
+
+.tabela-informacoes tfoot td {
+  padding-top: 16px;
+  text-align: center;
+  font-size: 0.87rem;
+  color: #8a7350;
+}
+
+/* ---------- Listas com marcadores personalizados ---------- */
+
+.lista-comodidades {
+  list-style-type: decimal;
+  margin: 0;
+  padding-left: 22px;
+}
+
+.lista-comodidades li {
+  margin-bottom: 8px;
+  padding-left: 4px;
+}
+
+.lista-evento {
+  list-style-type: disc;
+  margin: 0;
+  padding-left: 22px;
+}
+
+.lista-evento li {
+  margin-bottom: 6px;
+}
+
+.lista-contato {
+  list-style-type: square;
+  margin: 0;
+  padding-left: 22px;
+}
+
+.lista-contato li {
+  margin-bottom: 8px;
+}
+
+/* ---------- Evento ---------- */
+
+.evento h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+  color: #2c3540;
+}
+
+/* ---------- Figura ---------- */
+
+.foto-local {
+  margin: 26px 0 0;
+  text-align: center;
+}
+
+.foto-local img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.foto-local figcaption {
+  margin-top: 10px;
+  font-size: 0.92rem;
+  color: #6b5644;
+}
+
+/* ---------- Rodapé ---------- */
+
+.rodape {
+  max-width: 760px;
+  margin: 34px auto 0;
+  text-align: center;
+  font-style: italic;
+  font-size: 0.92rem;
+  color: #7d7d7d;
+}
+
+.rodape p {
+  margin: 2px 0;
+}
+
+/* ---------- Telas estreitas ---------- */
+
+@media (max-width: 560px) {
+  body {
+    padding: 20px 10px 30px;
+  }
+
+  .cabecalho h1 {
+    font-size: 1.75rem;
+  }
+
+  .cartao {
+    padding: 20px 18px;
+  }
+
+  .menu li {
+    margin: 4px 9px;
+  }
+
+  .tabela-informacoes {
+    font-size: 0.9rem;
+  }
+
+  .tabela-informacoes thead th,
+  .tabela-informacoes tbody th,
+  .tabela-informacoes tbody td {
+    padding: 9px 8px;
+  }
+}
